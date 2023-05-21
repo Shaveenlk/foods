@@ -1,0 +1,80 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    overflow-x: hidden;
+}
+
+
+main{
+    width: 100%;
+    margin: 0 auto;
+    height: 100vh;
+    padding: 3rem 2rem;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.807),rgba(0,0,0,0.75)),url(./images/bg.jpeg);;
+    background-size: cover;
+    background-position: center;
+}
+
+
+.container{
+    width: 100%;
+    display: flex;
+    justify-content:space-evenly;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.menubar ul{
+    list-style-type: none;
+    padding: 20px;
+}
+
+.menubar ul li{
+    display: inline-block; 
+    margin: 20px;
+}
+
+.menubar ul li a{
+    text-decoration: none;
+    color: white;
+    font-size: 1rem;
+}
+
+
+
+.onnline-order-btn{
+    padding: 40px;
+}
+
+.onnline-order-btn a{
+    color: white;
+    font-size: 1rem;
+    text-decoration: none;
+    background-color: rgb(239, 166, 28);
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+.hero{
+    padding: 50px;
+    display: flex;
+}
+
+.text-content{
+    margin-right: 100px;
+    width: 50%;
+    color: white;
+    align-self:center
+}
+
+.text-content h1{
+    font-size: 4.5rem;
+}
+.photo-content img{
+    width: 70%;
+    margin-left:200px;
+}
