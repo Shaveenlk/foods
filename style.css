@@ -68,7 +68,8 @@ main{
     margin-right: 100px;
     width: 50%;
     color: white;
-    align-self:center
+    align-self:center;
+    animation: textanimate 5s linear  1 forwards;
 }
 
 .text-content h1{
@@ -76,5 +77,49 @@ main{
 }
 .photo-content img{
     width: 70%;
-    margin-left:200px;
+    margin-left:100px;
+    animation: roundimg 5s linear 1 forwards;
+}
+
+.oop{
+    color: red;
+    font-size: 22px;
+    animation: offer 5s cubic-bezier(1,-0.01,.14,1)  1 forwards;
+}
+
+/* <=======animation image============> */
+
+@keyframes roundimg {
+    from{
+        transform:translateX(600px)
+    }
+    to{
+        transform: translateX(50px) rotate(360deg);
+    }    
+}
+
+/* <==============animation text-contatiner==========> */
+
+@keyframes textanimate {
+    from{
+        transform: translateX(-400px);
+    }
+    to{
+        transform: translateX(100px);
+    }
+}
+
+/* <=================animation to offer classs=============
+> */
+
+@keyframes offer {
+    50%{
+        transform: translateX(-500px);
+    }
+    75%{
+        transform: translateY(-2500px);
+    }
+    100%{
+        transform: translateZ(-500px);
+    }
 }
